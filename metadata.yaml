@@ -1,5 +1,5 @@
 homepage: "https://mhubcloud.com/"
 documentation: "https://mhubcloud.com/docs/"
 versions:
-  - sha: 5329d47893c94d09bdb4d20a204eeb0a2df2e49a
+  - sha: 33aede1bf3775a0d97e39ff5a87cdfb1395b9d49
     changeNotes: Initial release.

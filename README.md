@@ -1,2 +1,2 @@
-# mhubcloud-gtm
-Google Tag Manager Template for mHub Cloud
+# Introduction 
+GTM template for mHub Cloud (https://mhubcloud.com/). mHub Cloud is server-side tag management system allowing you to track, transform and send data into marketing and analytics platforms server-side. Instance of mHub Cloud server is deployable in Azure infrastructure by markaetplace application (https://azuremarketplace.microsoft.com/en-us/marketplace/apps/crossmasters.mhubc?ocid=GTMRewards_WhatsNewBlog_mhubc_050422). 

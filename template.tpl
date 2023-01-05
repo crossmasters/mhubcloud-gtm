@@ -13,7 +13,8 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "mHub Cloud",
+  "displayName": "mHub Cloud Event",
+  "categories": ["ANALYTICS", "CONVERSIONS", "TAG_MANAGEMENT"],
   "brand": {
     "id": "brand_dummy",
     "displayName": "",

@@ -5,7 +5,6 @@ Template Gallery Developer Terms of Service available at
 https://developers.google.com/tag-manager/gallery-tos (or such other URL as
 Google may provide), as modified from time to time.
 
-
 ___INFO___
 
 {
@@ -14,7 +13,11 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "mHub Cloud Event",
-  "categories": ["ANALYTICS", "CONVERSIONS", "TAG_MANAGEMENT"],
+  "categories": [
+    "ANALYTICS",
+    "CONVERSIONS",
+    "TAG_MANAGEMENT"
+  ],
   "brand": {
     "id": "brand_dummy",
     "displayName": "",
@@ -55,12 +58,6 @@ ___TEMPLATE_PARAMETERS___
   },
   {
     "type": "TEXT",
-    "name": "eventName",
-    "displayName": "Event Name",
-    "simpleValueType": true
-  },
-  {
-    "type": "TEXT",
     "name": "eventValue",
     "displayName": "Event Value",
     "simpleValueType": true,
@@ -73,13 +70,6 @@ ___TEMPLATE_PARAMETERS___
         "type": "NON_EMPTY"
       }
     ]
-  },
-  {
-    "type": "TEXT",
-    "name": "eventId",
-    "displayName": "Event Id",
-    "simpleValueType": true,
-    "help": "Event ID is used for deduplication of events. It is not mandatory. Use it in case when you are also sending this event by frontend measurement. In that case you must use same ID in both measurements."
   },
   {
     "type": "TEXT",
@@ -157,8 +147,6 @@ context["$schema"] = data.schema;
 context.value = makeNumber(data.eventValue);
 context.event = {
     code: data.eventCode,
-    name: data.eventName,
-    id: data.eventId,
     region: data.region
 };
 
@@ -168,10 +156,6 @@ context.publisher = {
     tm: data.gtmId,
     tmv: data.gtmVersion
 };
-
-if(data.eventId){
-  context.event.id = data.eventId + "";
-}
 
 // Adding custom properties
 var customProperties = data.customProperties;
